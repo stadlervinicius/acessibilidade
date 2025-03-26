@@ -35,325 +35,204 @@ document.addEventListener('DOMContentLoaded', function(){
      ROMULO JORGE LEITE PENA
      Criado em: 07:2007:20
      Código até aula 8
-     Math II (Progr II) - 3º B Manha - Médio
-     ALCIDES MUNHOZ, C E C-M-EF M
-     Próximas atividades
-     Nenhuma atividade para a próxima semana!
+     Math II (Progr II) - 3º B Manha - Médio@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+     @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
      
-     Escreva um aviso para sua turma
+     :root {
+         --laranja-claro: #FF862A;
+         --alto-contraste-fundo: #000000;
+         --alto-contraste-texto: #ffffff;
+         --alto-contraste-link: #ffd700;
+     }
      
-     Aviso: "Código até aula 8 abram os arquivos…"
-     ROMULO JORGE LEITE PENA
-     Criado em: 07:2007:20
-     Código até aula 8
-     Math II (Progr II) - 3º B Manha - Médio
-     ALCIDES MUNHOZ, C E C-M-EF M
-     Próximas atividades
-     Nenhuma atividade para a próxima semana!
+     body {
+         font-size: 1rem;
+         font-family: 'Montserrat';
+     }
      
-     Escreva um aviso para sua turma
-     
-     Aviso: "Código até aula 8 abram os arquivos…"
-     ROMULO JORGE LEITE PENA
-     Criado em: 07:2007:20
-     Código até aula 8
-     
-     abram os arquivos separados e copiem os códigos e colem nos arquivos do repositorio de vocês.
-     
-     index.txt
-     Texto
-     
-     script.txt
-     Texto
-     
-     styles.txt
-     Texto
-     
-     Adicionar comentário para a turma...
+     header {
+         background-color: #ffffff;
+     }
      
      
-     Aviso: "CÓDIGOS DO INDEX DA AULA 3 (BAIXE O…"
-     ROMULO JORGE LEITE PENA
-     Criado em: 19 de mar.19 de mar.
-     CÓDIGOS DO INDEX DA AULA 3
-     (BAIXE O ARQUIVO E COPIE DE DENTRO DELE)
-     
-     ACESSIBILIDADE AULA 3.txt
-     Texto
-     
-     Adicionar comentário para a turma...
-     
-     document.addEventListener('DOMContentLoaded', function(){
-         const botaoDeAcessibilidade = document.getElementById('botao-acessibilidade')
-         const opcoesDeAcessibilidade = document.getElementById('opcoes-acessibilidade')
-      
-         botaoDeAcessibilidade.addEventListener('click', function (){
-          botaoDeAcessibilidade.classList.toggle('rotacao-botao');
-          opcoesDeAcessibilidade.classList.toggle('apresenta-lista')
-      
-          const botaoSelecionado = botaoDeAcessibilidade.getAttribute('aria-expanded') === 'true';
-          botaoDeAcessibilidade.setAttribute('aria-expanded', !botaoSelecionado)
-        
-         })
-      
-          const aumentaFonteBotao = document.getElementById('aumentar-fonte');
-          const diminuiFonteBotao = document.getElementById('diminuir-fonte');
-          
-          const alternaContraste = document.getElementById('alterna-contraste')
-      
-          let tamanhoAtualFonte = 1;
-      
-          aumentaFonteBotao.addEventListener('click', function(){
-              tamanhoAtualFonte += 0.1;
-              document.body.style.fontSize = `${tamanhoAtualFonte}rem`
-      
-          })
-      
-          diminuiFonteBotao.addEventListener('click', function(){
-              tamanhoAtualFonte -= 0.1;
-              document.body.style.fontSize = `${tamanhoAtualFonte}rem`
-      
-          })
-      
-          alternaContraste.addEventListener('click', function(){
-              document.body.classList.toggle('alto-contraste')
-          })
-       
-      })
-     
-      ScrollReveal().reveal('#inicio', { delay: 500 });
-      ScrollReveal().reveal('#tropicalia', { delay: 500 });
-      ScrollReveal().reveal('#galeria', { delay: 500 });
-      ScrollReveal().reveal('#contato', { delay: 500 });
-     
-     abram os arquivos separados e copiem os códigos e colem nos arquivos do repositorio de vocês.
-     
-     index.txt
-     Texto
-     
-     script.txt
-     Texto
-     
-     styles.txt
-     Texto
-     
-     Adicionar comentário para a turma...
+     section {
+         padding-bottom: 5rem;
+     }
      
      
-     Aviso: "CÓDIGOS DO INDEX DA AULA 3 (BAIXE O…"
-     ROMULO JORGE LEITE PENA
-     Criado em: 19 de mar.19 de mar.
-     CÓDIGOS DO INDEX DA AULA 3
-     (BAIXE O ARQUIVO E COPIE DE DENTRO DELE)
+     .nav-link {
+         color: #CB6D43;
+         font-weight: 600;
+     }
      
-     ACESSIBILIDADE AULA 3.txt
-     Texto
+     .inicio-fundo {
+         /* aula 3 */
+         background-image: url('img/4965007.jpg');
+         /* Substitua pelo caminho da sua imagem */
+         background-size: cover;
+         background-position: right;
+         border-radius: 80px;
+         width: 100%;
+         height: 606px;
+         padding: 40px;
+         margin: 0 auto;
+     }
      
-     Adicionar comentário para a turma...
-     
-     document.addEventListener('DOMContentLoaded', function(){
-         const botaoDeAcessibilidade = document.getElementById('botao-acessibilidade')
-         const opcoesDeAcessibilidade = document.getElementById('opcoes-acessibilidade')
-      
-         botaoDeAcessibilidade.addEventListener('click', function (){
-          botaoDeAcessibilidade.classList.toggle('rotacao-botao');
-          opcoesDeAcessibilidade.classList.toggle('apresenta-lista')
-      
-          const botaoSelecionado = botaoDeAcessibilidade.getAttribute('aria-expanded') === 'true';
-          botaoDeAcessibilidade.setAttribute('aria-expanded', !botaoSelecionado)
-        
-         })
-      
-          const aumentaFonteBotao = document.getElementById('aumentar-fonte');
-          const diminuiFonteBotao = document.getElementById('diminuir-fonte');
-          
-          const alternaContraste = document.getElementById('alterna-contraste')
-      
-          let tamanhoAtualFonte = 1;
-      
-          aumentaFonteBotao.addEventListener('click', function(){
-              tamanhoAtualFonte += 0.1;
-              document.body.style.fontSize = `${tamanhoAtualFonte}rem`
-      
-          })
-      
-          diminuiFonteBotao.addEventListener('click', function(){
-              tamanhoAtualFonte -= 0.1;
-              document.body.style.fontSize = `${tamanhoAtualFonte}rem`
-      
-          })
-      
-          alternaContraste.addEventListener('click', function(){
-              document.body.classList.toggle('alto-contraste')
-          })
-       
-      })
-     
-      ScrollReveal().reveal('#inicio', { delay: 500 });
-      ScrollReveal().reveal('#tropicalia', { delay: 500 });
-      ScrollReveal().reveal('#galeria', { delay: 500 });
-      ScrollReveal().reveal('#contato', { delay: 500 });
-     
-     abram os arquivos separados e copiem os códigos e colem nos arquivos do repositorio de vocês.
-     
-     index.txt
-     Texto
-     
-     script.txt
-     Texto
-     
-     styles.txt
-     Texto
-     
-     Adicionar comentário para a turma...
+     /* posicionamento para a imagem à direita */
+     .img-inicio {
+         position: absolute;
+         right: 0;
+         top: 18rem;
+         width: 45rem;
+         height: auto;
+     }
      
      
-     Aviso: "CÓDIGOS DO INDEX DA AULA 3 (BAIXE O…"
-     ROMULO JORGE LEITE PENA
-     Criado em: 19 de mar.19 de mar.
-     CÓDIGOS DO INDEX DA AULA 3
-     (BAIXE O ARQUIVO E COPIE DE DENTRO DELE)
-     
-     ACESSIBILIDADE AULA 3.txt
-     Texto
-     
-     Adicionar comentário para a turma...
-     
-     document.addEventListener('DOMContentLoaded', function(){
-         const botaoDeAcessibilidade = document.getElementById('botao-acessibilidade')
-         const opcoesDeAcessibilidade = document.getElementById('opcoes-acessibilidade')
-      
-         botaoDeAcessibilidade.addEventListener('click', function (){
-          botaoDeAcessibilidade.classList.toggle('rotacao-botao');
-          opcoesDeAcessibilidade.classList.toggle('apresenta-lista')
-      
-          const botaoSelecionado = botaoDeAcessibilidade.getAttribute('aria-expanded') === 'true';
-          botaoDeAcessibilidade.setAttribute('aria-expanded', !botaoSelecionado)
-        
-         })
-      
-          const aumentaFonteBotao = document.getElementById('aumentar-fonte');
-          const diminuiFonteBotao = document.getElementById('diminuir-fonte');
-          
-          const alternaContraste = document.getElementById('alterna-contraste')
-      
-          let tamanhoAtualFonte = 1;
-      
-          aumentaFonteBotao.addEventListener('click', function(){
-              tamanhoAtualFonte += 0.1;
-              document.body.style.fontSize = `${tamanhoAtualFonte}rem`
-      
-          })
-      
-          diminuiFonteBotao.addEventListener('click', function(){
-              tamanhoAtualFonte -= 0.1;
-              document.body.style.fontSize = `${tamanhoAtualFonte}rem`
-      
-          })
-      
-          alternaContraste.addEventListener('click', function(){
-              document.body.classList.toggle('alto-contraste')
-          })
-       
-      })
-     
-      ScrollReveal().reveal('#inicio', { delay: 500 });
-      ScrollReveal().reveal('#tropicalia', { delay: 500 });
-      ScrollReveal().reveal('#galeria', { delay: 500 });
-      ScrollReveal().reveal('#contato', { delay: 500 });
-     
-     Aviso: "Código até aula 8 abram os arquivos…"
-     ROMULO JORGE LEITE PENA
-     Criado em: 07:2007:20
-     Código até aula 8
-     
-     abram os arquivos separados e copiem os códigos e colem nos arquivos do repositorio de vocês.
-     
-     index.txt
-     Texto
-     
-     script.txt
-     Texto
-     
-     styles.txt
-     Texto
-     
-     Adicionar comentário para a turma...
+     .esquerda-conteudo {
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 1rem;
+     }
      
      
-     Aviso: "CÓDIGOS DO INDEX DA AULA 3 (BAIXE O…"
-     ROMULO JORGE LEITE PENA
-     Criado em: 19 de mar.19 de mar.
-     CÓDIGOS DO INDEX DA AULA 3
-     (BAIXE O ARQUIVO E COPIE DE DENTRO DELE)
+     .botao-inicio {
+         background-color: var(--laranja-claro);
+         border-radius: 30px;
+         border: none;
+         width: 14em;
+         height: 3em;
+         align-content: center;
      
-     ACESSIBILIDADE AULA 3.txt
-     Texto
+     }
      
-     Adicionar comentário para a turma...
+     .display-4 {
+         text-shadow: -5px 5px var(--laranja-claro);
+     }
      
-     document.addEventListener('DOMContentLoaded', function(){
-         const botaoDeAcessibilidade = document.getElementById('botao-acessibilidade')
-         const opcoesDeAcessibilidade = document.getElementById('opcoes-acessibilidade')
-      
-         botaoDeAcessibilidade.addEventListener('click', function (){
-          botaoDeAcessibilidade.classList.toggle('rotacao-botao');
-          opcoesDeAcessibilidade.classList.toggle('apresenta-lista')
-      
-          const botaoSelecionado = botaoDeAcessibilidade.getAttribute('aria-expanded') === 'true';
-          botaoDeAcessibilidade.setAttribute('aria-expanded', !botaoSelecionado)
-        
-         })
-      
-          const aumentaFonteBotao = document.getElementById('aumentar-fonte');
-          const diminuiFonteBotao = document.getElementById('diminuir-fonte');
-          
-          const alternaContraste = document.getElementById('alterna-contraste')
-      
-          let tamanhoAtualFonte = 1;
-      
-          aumentaFonteBotao.addEventListener('click', function(){
-              tamanhoAtualFonte += 0.1;
-              document.body.style.fontSize = `${tamanhoAtualFonte}rem`
-      
-          })
-      
-          diminuiFonteBotao.addEventListener('click', function(){
-              tamanhoAtualFonte -= 0.1;
-              document.body.style.fontSize = `${tamanhoAtualFonte}rem`
-      
-          })
-      
-          alternaContraste.addEventListener('click', function(){
-              document.body.classList.toggle('alto-contraste')
-          })
-       
-      })
      
-      ScrollReveal().reveal('#inicio', { delay: 500 });
-      ScrollReveal().reveal('#tropicalia', { delay: 500 });
-      ScrollReveal().reveal('#galeria', { delay: 500 });
-      ScrollReveal().reveal('#contato', { delay: 500 });
- 
-     aumentaFonteBotao.addEventListener('click', function(){
-         tamanhoAtualFonte += 0.1;
-         document.body.style.fontSize = `${tamanhoAtualFonte}rem`
- 
-     })
- 
-     diminuiFonteBotao.addEventListener('click', function(){
-         tamanhoAtualFonte -= 0.1;
-         document.body.style.fontSize = `${tamanhoAtualFonte}rem`
- 
-     })
- 
-     alternaContraste.addEventListener('click', function(){
-         document.body.classList.toggle('alto-contraste')
-     })
-  
- })
-
- ScrollReveal().reveal('#inicio', { delay: 500 });
- ScrollReveal().reveal('#tropicalia', { delay: 500 });
- ScrollReveal().reveal('#galeria', { delay: 500 });
- ScrollReveal().reveal('#contato', { delay: 500 });
+     #tropicalia {
+         position: relative;
+         padding-top: 5rem;
+         margin-top: 3rem;
+         margin-bottom: 3rem;
+         background: url('img/flor.png') top right no-repeat,
+             url('img/flor-esquerda.png') bottom left no-repeat;
+         background-size: 180px 180px;
+         /* Ajuste o tamanho conforme necessário */
+     }
+     
+     #tropicalia .container {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         position: relative;
+         z-index: 1;
+         /* Garante que o conteúdo fica acima das imagens do background */
+     }
+     
+     
+     h2 {
+         font-family: 'Lemon', serif;
+         font-size: 2.5em;
+         font-style: normal;
+         color: var(--laranja-claro);
+     }
+     
+     #galeria {
+         background-color: #FAF4F4;
+     
+     }
+     
+     .fundo-galeria {
+         background: url('img/flor-bottom-direita.png') bottom right no-repeat;
+         background-size: 180px 180px;
+     }
+     
+     #contato {
+         background-image: url('img/4965007.jpg');
+         background-size: cover;
+         padding: 4rem 0;
+         /* Espaçamento interno para a seção de contato */
+     
+     }
+     
+     .formulario {
+         background-color: #ffffff;
+         padding: 2rem;
+         /* Espaçamento interno dentro do formulário */
+         border-radius: 10px;
+         /* Borda arredondada para o formulário */
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         /* Sombra suave para destacar o formulário */
+         font-weight: bold;
+     }
+     
+     .formulario button {
+         background-color: #CB6D43;
+         border: none;
+         font-weight: bold;
+     }
+     
+     .form-control {
+         background-color: #F1EDEF;
+     }
+     .menu-acessibilidade{
+         position: fixed;
+         top:2rem;
+         right:20px;
+         z-index: 1000;
+     }
+     
+     .rotacao-botao{
+         transform: rotate(-90deg);
+         transform-origin: right center;
+     }
+     
+     .opcoes-acessibilidade{
+         margin-top:10px;
+         display: flex;
+         flex-direction: column;
+     }
+     
+     .opcoes-acessibilidade button{
+         margin-bottom: 5px;
+     }
+     .apresenta-lista{
+         display: none;
+     }
+     
+     .alto-contraste{
+         background-color: var(--alto-contraste-fundo);
+         color: var(--alto-contraste-texto);
+     }
+     
+     .alto-contraste header,
+     .alto-contraste footer,
+     .alto-contraste .formulario{
+         background-color: var(--alto-contraste-fundo);
+         color: var(--alto-contraste-texto);
+     }
+     
+     .alto-contraste .nav-link{
+         color: var(--alto-contraste-link);
+     }
+     
+     .alto-contraste .botao-inicio,
+     .alto-contraste .formulario button,
+     .alto-contraste .btn-primary{
+         background-color: var(--alto-contraste-link);
+         color: var(--alto-contraste-fundo)
+     }
+     
+     .alto-contraste #tropicalia {
+         background: none;
+     }
+     
+     .alto-contraste #galeria {
+         background-color: var(--alto-contraste-fundo);
+     }
+     .alto-contraste .fundo-galeria {
+         background: none;
+     }
+     
